@@ -51,3 +51,34 @@ Reference/Non-Primitive Data Types:
 */
 
  
+// +++++++++++++++++++++++++++++++++++++++++++++
+
+/* stack(Primitive) and heap(reference/Non-Primitive)
+
+Primitive data types are stored in stack memory and copied by value, 
+while non-primitive data types are stored in heap memory and copied by reference.
+
+stack:
+let a = 10; // a is stored in stack memory
+let b = a; // b is a copy of a, stored in stack memory
+a = 20; // changing a does not affect b
+console.log(a); // 20
+console.log(b); // 10
+
+heap:
+let obj1 = { name: "sunit" }; // obj1 is stored in heap memory
+let obj2 = obj1; // obj2 is a reference to the same object in heap memory
+obj1.name = "sunit mallick"; // changing obj1 affects obj2 because they reference the same object
+console.log(obj1.name); // sunit mallick
+console.log(obj2.name); // sunit mallick    
+*/
+
+/*
+Main Difference
+Feature	               Stack	                  Heap
+Stores	          Primitive values	        Objects & arrays
+Access speed	      Faster	            Slower than stack
+Storage	           Actual value	            Reference/address
+Copy behavior	      By value	               By reference
+Memory size	           Smaller	                  Larger
+*/
