@@ -33,6 +33,7 @@ const users = [
 ];
 //console.log(users);
 
+/*
 console.log(tinderUser); // { id: '123abc', name: 'Sammy', isLoggedin: false }
 
 console.log(Object.keys(tinderUser)); // output: [ 'id', 'name', 'isLoggedin' ] , this is a way to get the keys of an object as an array
@@ -40,3 +41,38 @@ console.log(Object.values(tinderUser)); // output: [ '123abc', 'Sammy', false ] 
 console.log(Object.entries(tinderUser)); // output: [ [ 'id', '123abc' ], [ 'name', 'Sammy' ], [ 'isLoggedin', false ] ] , this is a way to get the key-value pairs of an object as an array of arrays
 
 console.log(tinderUser.hasOwnProperty('isLoggedin')); // output: true , this is a way to check if an object has a property or not
+*/
+
+
+// +++++++++  objects destructuring +++++++++ 
+
+const course = {
+    courseName: "JavaScript",
+    price: 999,
+    courseInstructor: "Sam"
+}
+
+// course.courseInstructor // output: Sam
+        //instead of this 
+const {courseName, price, courseInstructor: instructor} = course; // this is a way to destructure an object into variables
+
+//console.log(instructor); // output: Sam , this is a way to rename a variable while destructuring an object
+
+/*
+// JSON
+{
+    "name": "Sam",
+    "coursename": "JavaScript",
+    "price": 999
+}
+*/
+
+/*
+[
+    {},
+    {}
+]
+*/
+
+// API may be in object or Array format, 
+// we can use destructuring to get the values from the API response easily.
